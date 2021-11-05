@@ -1,15 +1,16 @@
 // import Projects from "./Projects";
-import About from "./About";
+// import About from "./About";
 import LandingPage from "./LandingPage";
-import Work from "./Work";
+// import Work from "./Work";
 import Footer from "./Footer";
 
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+// import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 const Site = () => {
 	return (
 		<div>
-			<Router basename="/">
+			<LandingPage />
+			{/* <Router basename="/">
 				<div>
 					<Switch>
 						<Route exact path="/">
@@ -23,7 +24,7 @@ const Site = () => {
 						</Route>
 					</Switch>
 				</div>
-			</Router>
+			</Router> */}
 			<Footer />
 		</div>
 	);

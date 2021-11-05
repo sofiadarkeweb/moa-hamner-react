@@ -11,10 +11,11 @@ const LandingPage = () => {
 		<div className="landing-page">
 			<h2 className="landing-sub-title">ljuddesign</h2>
 			<header className="landing-header">
-				<Link className="title" to="/about">
+				<h1 className="title">Moa Hamner</h1>
+				{/* <Link className="title" to="/about">
 					Moa <br />
 					Hamner
-				</Link>
+				</Link> */}
 			</header>
 
 			{/* <img className="landing-picture" src={Eye} alt="My eye" /> */}

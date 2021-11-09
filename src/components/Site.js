@@ -6,6 +6,8 @@ import Footer from "./Footer";
 
 // import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
+//TODO solve react router
+
 const Site = () => {
 	return (
 		<div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Aframe from "./Aframe";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Rose from "../media/rose.jpg";
 
 const LandingPage = () => {

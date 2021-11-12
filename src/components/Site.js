@@ -4,14 +4,14 @@ import LandingPage from "./LandingPage";
 import Work from "./Work";
 import Footer from "./Footer";
 
-// import { BrowserRouter as Router} from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 
-//TODO solve react router
+//TODO fix react routes! it worked but then it did not, why??
 
 const Site = () => {
 	return (
 		<div>
+			{/* <LandingPage />  */}
 			<Routes>
 				<Route path="/" element={<LandingPage />} />
 				<Route path="/about" element={<About />} />

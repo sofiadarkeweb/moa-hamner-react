@@ -296,46 +296,42 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
-	.project-box {
-		width: 100vw;
+	.title {
+		font-size: 6rem;
+		line-height: 6rem;
 	}
 
-	.page-title,
-	.sub-title {
-		text-align: right;
+	.about-text {
+		font-size: 1rem;
 	}
 }
-@media screen and (max-width: 500px) {
-	.page-title,
-	.sub-title {
+@media screen and (max-width: 550px) {
+	.title {
+		font-size: 5rem;
+		line-height: 5rem;
+	}
+	.landing-sub-title {
 		font-size: 1rem;
-		line-height: 1.3rem;
-		text-align: left;
+		line-height: 5rem;
 	}
 
-	.page-title {
-		font-size: 1rem;
+	.about-text {
+		font-size: 0.8rem;
+		padding: 2rem;
 	}
-	.contact {
-		position: absolute;
 
-		margin-top: 40px;
-		text-align: left;
+	.cv-text {
+		font-size: 0.5rem;
+		/* width: 100%; */
 	}
-	.projects-container {
-		padding-top: 2rem;
-		padding-bottom: 2rem;
+
+	.cv-container {
+		display: flex;
 	}
-	.project-texts {
-		opacity: 0.8;
-	}
-	.project-title {
-		font-size: 1.2rem;
-	}
-	.project-sub-title {
-		font-size: 1.2rem;
-	}
-	.App-header {
-		padding: 1.3rem;
+}
+@media screen and (max-width: 400px) {
+	.title {
+		font-size: 4rem;
+		line-height: 4rem;
 	}
 }

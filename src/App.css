@@ -126,18 +126,23 @@ footer {
 
 .title:hover {
 	color: black;
+	animation: 1s ease-out 0s 1 fadeIn;
 }
 
 .landing-sub-title {
-	color: yellow;
+	color: black;
 	font-family: sans-serif;
 	text-transform: uppercase;
 	position: absolute;
 	mix-blend-mode: normal;
 	padding-top: 1.5rem;
-	/* transform: rotate(-10deg);
-	font-size: 6rem; */
+	z-index: 10000;
+	/* cursor: pointer; */
 }
+
+/* .landing-sub-title:hover {
+	transform: scale(1.1);
+} */
 
 .landing-picture {
 	object-fit: cover;

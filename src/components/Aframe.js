@@ -1,11 +1,13 @@
 import React from "react";
-
+// import Head from "next/head";
 import { Entity, Scene } from "aframe-react";
 // import * as Tone from "tone";
 
 // const synth = new Tone.Synth().toDestination();
 
-
+// function playSynth() {
+// 	synth.TriggerAttackRelease("C2", "8n");
+// }
 
 export class Aframe extends React.Component {
 	constructor(props) {
@@ -34,9 +36,9 @@ export class Aframe extends React.Component {
 		this.setState({
 			color: colors[Math.floor(Math.random() * colors.length)],
 		});
-	// 	this.playNote(tones[Math.floor(Math.random() * tones.length)]);
-	// 	console.log(tones[Math.floor(Math.random() * tones.length)]);
-	// }
+		// this.playNote(tones[Math.floor(Math.random() * tones.length)]);
+		// console.log(tones[Math.floor(Math.random() * tones.length)]);
+	}
 
 	render() {
 		return (

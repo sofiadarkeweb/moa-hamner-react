@@ -119,6 +119,7 @@ footer {
 	text-align: center;
 	font-weight: 700;
 	cursor: pointer;
+	animation: 2s ease-out 0s 1 fadeIn;
 	/* pointer-events: none; */
 	/* border: 3px blue solid; */
 }

@@ -14,16 +14,17 @@ body {
 }
 
 footer {
-	/* background: black; */
+	/* background: yellow; */
 	color: #bbb;
-	padding: 10px;
+	/* padding: 10px; */
 	text-align: center;
 	margin-top: auto;
 	font-size: 0.6em;
 
 	width: 100%;
 	position: absolute;
-	bottom: 0;
+	bottom: 1rem;
+	margin: 0;
 }
 
 .App {
@@ -291,9 +292,9 @@ a:hover {
 	/* max-width: 50vw; */
 }
 
-footer {
+/* footer {
 	margin: 1rem;
-}
+} */
 
 @media screen and (max-width: 1000px) {
 	.title {
@@ -303,6 +304,13 @@ footer {
 
 	.about-text {
 		font-size: 1rem;
+	}
+
+	.landing-square,
+	.landing-square-about,
+	.landing-square-work {
+		height: 85vh;
+		width: 85vw;
 	}
 }
 @media screen and (max-width: 550px) {
@@ -328,10 +336,30 @@ footer {
 	.cv-container {
 		display: flex;
 	}
+
+	.landing-square,
+	.landing-square-about,
+	.landing-square-work {
+		height: 90vh;
+	}
+
+	footer {
+		/* background: yellow; */
+		color: #bbb;
+		margin: 0;
+		font-size: 0.5em;
+		bottom: 2rem;
+	}
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
 	.title {
 		font-size: 4rem;
 		line-height: 4rem;
+	}
+}
+@media screen and (max-width: 400px) {
+	.title {
+		font-size: 3rem;
+		line-height: 3rem;
 	}
 }

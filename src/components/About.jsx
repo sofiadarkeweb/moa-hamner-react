@@ -8,7 +8,6 @@ const About = () => {
 	// }
 	return (
 		<div className="about-page">
-			{/* <img className="landing-picture" src={Eye} alt="My eye" /> */}
 			<img className="landing-picture" src={Eye} alt="My eye" />
 			<div className="landing-square-about">
 				<p className="about-text">

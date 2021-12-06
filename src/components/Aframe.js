@@ -1,9 +1,15 @@
 import React from "react";
 // import Head from "next/head";
 import { Entity, Scene } from "aframe-react";
-// import * as Tone from "tone";
+import * as Tone from "tone";
+import Sound from "../media/TESTHEMSIDA.wav";
 
 // const synth = new Tone.Synth().toDestination();
+const player = new Tone.Player(Sound).toDestination();
+
+// const player = new Tone.Player(
+// 	"https://tonejs.github.io/audio/berklee/gong_1.mp3"
+// ).toDestination();
 
 // function playSynth() {
 // 	synth.TriggerAttackRelease("C2", "8n");
@@ -30,6 +36,12 @@ export class Aframe extends React.Component {
 	// 	synth.triggerAttackRelease(`${note}4`, "8n");
 	// }
 
+	playMpthree() {
+		Tone.loaded().then(() => {
+			player.start();
+		});
+	}
+
 	changeColor() {
 		const colors = ["#c8553d", "#2d6a4f", "#FFB703", "#FB8500"];
 		// const tones = ["D", "G", "A", "C4"];
@@ -37,6 +49,7 @@ export class Aframe extends React.Component {
 			color: colors[Math.floor(Math.random() * colors.length)],
 		});
 		// this.playNote(tones[Math.floor(Math.random() * tones.length)]);
+		this.playMpthree();
 		// console.log(tones[Math.floor(Math.random() * tones.length)]);
 	}
 
@@ -59,6 +72,7 @@ export class Aframe extends React.Component {
 								intensity="1"
 								position="2 4 4"
 							/>
+							{/* <Button events= {{click: this.playMpthree.bind(this)}}></Button> */}
 
 							<Entity
 								id="tetrahedron"

@@ -1,17 +1,23 @@
 // import { BrowserRouter as Router, Link } from "react-router-dom";
 import React from "react";
+import { useState } from "react";
 
 function Project(props) {
-	return (
-		<div className="project-box">
-			<img className="project-image" src={props.img} alt={props.imgalt} />
+	const [hiddenImage, sethiddenImage] = useState(false);
 
-			<div className="project-texts">
-				<p className="project-title">{props.title}</p>
-				<p className="project-sub-title">
-					{props.info} {props.year}
-				</p>
-			</div>
+	return (
+		<div
+			className="cv-text"
+			onMouseEnter={() => sethiddenImage(true)}
+			onMouseLeave={() => sethiddenImage(false)}
+		>
+			{hiddenImage && (
+				<img className="movie-img" alt="Still from movie" src={props.img}></img>
+			)}
+			<p className="project-title">{props.title}</p>
+			<p className="project-sub">
+				{props.info} {props.year}
+			</p>
 		</div>
 	);
 }

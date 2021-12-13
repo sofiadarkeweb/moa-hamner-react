@@ -20,7 +20,6 @@ footer {
 	text-align: center;
 	margin-top: auto;
 	font-size: 0.6em;
-
 	width: 100%;
 	position: absolute;
 	bottom: 1rem;
@@ -43,6 +42,43 @@ footer {
 	background-color: blue; */
 }
 
+.circle-about-link {
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	display: flex;
+	border-radius: 50%;
+	background-color: rgb(51, 19, 80);
+	text-align: center;
+	margin-top: auto;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	margin: 0;
+	text-decoration: none;
+	animation: pulse 5s infinite ease-out;
+}
+
+.circle-about-link > a {
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9); /* scaling to 0 */
+	}
+	50% {
+		transform: scale(1.1); /* increasing the size */
+	}
+	70% {
+		transform: scale(1); /* decreasing the size */
+	}
+	100% {
+		transform: scale(0.9); /* seeting back to initial size */
+	}
+}
+
 .landing-square {
 	width: 80vw;
 	height: 80vh;
@@ -56,7 +92,7 @@ footer {
 .landing-square-about {
 	width: 80vw;
 	height: 80vh;
-
+	display: flex;
 	position: absolute;
 	/* background-color: rgb(225, 206, 206); */
 	border: 15px pink solid;
@@ -66,30 +102,46 @@ footer {
 	width: 80vw;
 	height: 80vh;
 	position: absolute;
-	/* background-color: #e1cece; */
-	/* background-color: #f4e8e8; */
 	border: 15px pink solid;
 	text-align: left;
-
 	mix-blend-mode: difference;
+	padding-bottom: 2rem;
+	margin-bottom: 2rem;
+	/* height: 70%; */
 }
+
+/* .landing-square-work-inside {
+	width: 80vw;
+	top: 4rem;
+} */
 
 .cv-title {
-	padding: 2rem;
+	/* padding: 2rem; */
+	width: 100%;
 	padding-bottom: 0;
 	color: white;
-}
-
-.cv-text {
-	color: white;
-	font-family: "poppins", sans-serif;
-	padding: 2rem;
 	text-align: left;
-	width: 50%;
 }
 
 .cv-container {
 	display: flex;
+	flex-wrap: wrap;
+	width: 70vw;
+	height: 70%;
+}
+
+.cv-text {
+	font-family: "poppins", sans-serif;
+	/* padding: 2rem; */
+	text-align: left;
+	width: 48%;
+	/* border: 1px red solid; */
+	/* margin-bottom: 2rem; */
+	position: relative;
+	cursor: pointer;
+	color: rgb(125, 124, 124);
+	padding: 0.5em;
+	/* background-color: rgb(244, 215, 220); */
 }
 
 .aframe-scene {
@@ -135,15 +187,12 @@ footer {
 	font-family: sans-serif;
 	text-transform: uppercase;
 	position: absolute;
-	mix-blend-mode: normal;
-	padding-top: 1.5rem;
+	/* mix-blend-mode: normal; */
+	padding-top: 2rem;
 	z-index: 10000;
+	font-size: 1.1rem;
 	/* cursor: pointer; */
 }
-
-/* .landing-sub-title:hover {
-	transform: scale(1.1);
-} */
 
 .landing-picture {
 	object-fit: cover;
@@ -165,10 +214,15 @@ footer {
 
 .about-text {
 	padding: 3rem;
-	font-family: "poppins", sans-serif;
-	font-size: 1.5rem;
-	/* line-height: 3rem; */
-	text-align: left;
+	/* font-family: "poppins", sans-serif; */
+	/* font-size: 1.5rem; */
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin-top: 10rem;
+
+	line-height: 1.5rem;
+	/* text-align: left; */
 }
 
 .email-link {
@@ -195,13 +249,9 @@ footer {
 	color: white;
 }
 
-contact .sub-title {
-	font-size: 1.2rem;
-}
-
-.sub-title {
+.project-sub {
 	font-weight: 300;
-	line-height: 2.5rem;
+	font-style: italic;
 }
 
 .page-title {
@@ -214,62 +264,13 @@ contact .sub-title {
 	align-items: center;
 	font-weight: 700;
 	/* visibility: hidden; */
-	opacity: 0;
+	/* opacity: 0; */
 	z-index: 1000;
 }
 
-.project-title {
-	font-size: 2rem;
-	text-align: center;
-	z-index: 1000;
-	/* cursor: pointer; */
-	color: orangered;
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-
-.project-sub-title {
-	font-size: 1.3rem;
-	text-align: center;
-	z-index: 1000;
-	/* cursor: pointer; */
-	color: orangered;
-}
-
-h1,
-h2,
-p {
-	margin-block-start: 0;
-	margin-block-end: 0;
-}
-
-.project-title:hover,
-.project-texts:hover {
-	visibility: visible;
-	opacity: 1;
-}
-
-.projects-container {
-	display: flex;
-	flex-wrap: wrap;
-	position: relative;
-	padding-top: 1rem;
-	padding-bottom: 4rem;
-	/* padding-left: 2rem;
-	padding-right: 2rem; */
-}
-
-.project-box {
-	width: 50vw;
-
-	flex-grow: 1;
-	/* height: 30vh; */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	/* margin: 1rem; */
-}
+/* .project-title {
+	font-weight: 700;
+} */
 
 a {
 	text-decoration: none;
@@ -292,9 +293,31 @@ a:hover {
 	/* max-width: 50vw; */
 }
 
-/* footer {
-	margin: 1rem;
-} */
+.movie-img {
+	width: 300px;
+	position: absolute;
+	background-color: black;
+	mix-blend-mode: normal;
+	color: white;
+	z-index: 100;
+	/* border: 1px red solid; */
+	margin: 10rem;
+	margin-top: -10rem;
+	animation: 1s ease-out 0s 1 fadeIn;
+	/* padding: 0.5em; */
+}
+
+@media screen and (max-width: 1200px) {
+	.cv-text {
+		width: 40%;
+		padding: 0.5em;
+		font-size: 0.9rem;
+		/* background-color: rgb(244, 215, 220); */
+	}
+	.cv-container {
+		width: 80vw;
+	}
+}
 
 @media screen and (max-width: 1000px) {
 	.title {
@@ -307,12 +330,42 @@ a:hover {
 	}
 
 	.landing-square,
-	.landing-square-about,
-	.landing-square-work {
+	.landing-square-about {
 		height: 85vh;
 		width: 85vw;
 	}
+
+	.landing-square-work {
+	}
+
+	.movie-img {
+		margin: 8rem;
+		margin-top: -8rem;
+	}
 }
+
+@media screen and (max-width: 735px) {
+	.cv-text {
+		/* width: 50%; */
+		padding: 0.5em;
+		font-size: 0.85rem;
+		/* background-color: rgb(244, 215, 220); */
+	}
+	.cv-container {
+		width: 80vw;
+		height: 80%;
+	}
+}
+@media screen and (max-width: 619px) {
+	.cv-text {
+		font-size: 0.83rem;
+	}
+	.movie-img {
+		margin: 1rem;
+		margin-top: 2rem;
+	}
+}
+
 @media screen and (max-width: 550px) {
 	.title {
 		font-size: 5rem;
@@ -329,22 +382,34 @@ a:hover {
 	}
 
 	.cv-text {
-		font-size: 0.5rem;
-		/* width: 100%; */
+		font-size: 0.8rem;
+		width: 100%;
+		margin: 0;
+		padding-left: 2em;
 	}
 
 	.cv-container {
-		display: flex;
+		/* margin-top: 4rem; */
+		height: 85%;
 	}
 
 	.landing-square,
-	.landing-square-about,
-	.landing-square-work {
+	.landing-square-about {
 		height: 90vh;
 	}
 
+	.landing-square-work {
+		/* width: 80vw; */
+		height: 85%;
+		top: 2rem;
+		/* position: absolute;
+		text-align: left;  */
+		/* padding-bottom: 2rem;
+		margin-bottom: 2rem; */
+		/* height: 100%; */
+	}
+
 	footer {
-		/* background: yellow; */
 		color: #bbb;
 		margin: 0;
 		font-size: 0.5em;

@@ -9,10 +9,9 @@ const LandingPage = () => {
 	// }
 	return (
 		<div className="landing-page">
-			<h2 className="landing-sub-title">ljuddesign</h2>
+			<h2 className="landing-sub-title">Ljuddesigner för film och radio</h2>
 			<header className="landing-header">
-				{/* <h1 className="title">Moa Hamner</h1> */}
-				<Link className="title" to="/about">
+				<Link className="title" to="/work">
 					Moa <br />
 					Hamner
 				</Link>

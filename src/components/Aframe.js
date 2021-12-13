@@ -2,14 +2,32 @@ import React from "react";
 // import Head from "next/head";
 import { Entity, Scene } from "aframe-react";
 import * as Tone from "tone";
-import Sound from "../media/TESTHEMSIDA.wav";
+// import Sound from "../media/TESTHEMSIDA.wav";
+import Sound1 from "../media/1.wav";
+import Sound2 from "../media/2.wav";
 
 // const synth = new Tone.Synth().toDestination();
-const player = new Tone.Player(Sound).toDestination();
 
-// const player = new Tone.Player(
-// 	"https://tonejs.github.io/audio/berklee/gong_1.mp3"
-// ).toDestination();
+const player = new Tone.Player(Sound2).toDestination();
+
+// const tones = [Sound1, Sound2];
+
+// let tones = new Tone.Buffers({
+// 	1: Sound1,
+// 	2: Sound2,
+// });
+
+// let buff1 = new Tone.Buffers(Sound1);
+// let buff2 = new Tone.Buffers(Sound2);
+// let tones = [buff1, buff2];
+
+// const player = new Tone.Player({
+// 	ready1: buff1,
+// 	ready2: buff2,
+// }).toDestination();
+
+// const player = new Tone.Player().toDestination();
+// const player = new Tone.Player(Sound1).toDestination();
 
 // function playSynth() {
 // 	synth.TriggerAttackRelease("C2", "8n");
@@ -36,22 +54,42 @@ export class Aframe extends React.Component {
 	// 	synth.triggerAttackRelease(`${note}4`, "8n");
 	// }
 
-	playMpthree() {
+	// var soundSamples = new Tone.Buffers({
+	// 	"1" : Sound1,
+	// 	"2" : Sound2
+	// 	...
+	// },
+
+	playSound() {
+		// const tones = [Sound1, Sound2];
+		// console.log(tones);
 		Tone.loaded().then(() => {
 			player.start();
 		});
+		// return tones;
 	}
 
 	changeColor() {
 		const colors = ["#c8553d", "#2d6a4f", "#FFB703", "#FB8500"];
+		// tones = [];
+		const tones = [Sound1, Sound2];
 		// const tones = ["D", "G", "A", "C4"];
+
 		this.setState({
 			color: colors[Math.floor(Math.random() * colors.length)],
 		});
+		console.log("colors change");
 		// this.playNote(tones[Math.floor(Math.random() * tones.length)]);
-		this.playMpthree();
+		// this.setState(
+		this.playSound(tones[Math.floor(Math.random() * tones.length)]);
+		// );
+		// this.playSound({ tones });
+
+		// console.log(tones);
 		// console.log(tones[Math.floor(Math.random() * tones.length)]);
 	}
+
+	changeSound() {}
 
 	render() {
 		return (

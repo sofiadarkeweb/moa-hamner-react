@@ -9,23 +9,32 @@ const About = () => {
 	return (
 		<div className="about-page">
 			<img className="landing-picture" src={Eye} alt="My eye" />
+
 			<div className="landing-square-about">
 				<p className="about-text">
-					Quisque a porta dui, ac aliquet lorem. Cras cursus ligula felis, nec
-					gravida metus lobortis tincidunt. Morbi cursus arcu a urna auctor
-					ullamcorper. Curabitur consequat convallis urna, id porta tortor
-					volutpat sed. Nunc a odio luctus, sagittis felis et, mollis tellus.
-					Curabitur efficitur nulla mauris, in ultrices arcu posuere a.
-					Curabitur sagittis lacus urna, ut rutrum dui volutpat a.
 					<br />
+					+467664 034i304
 					<br />
 					<a className="email-link" href="mailto:moahamner@hotmail.com">
-						Kontakta mig
+						moahamner@hotmail.com
 					</a>
 					<br />
-					<Link className="email-link" to="/work">
-						Work
+					<br />
+					Moa Hamner
+					<br />
+					Addressrad 1 <br />
+					Addressrad 2
+					<br />
+					{/* <a className="email-link" href="mailto:moahamner@hotmail.com">
+						Kontakta mig
+					</a> */}
+					<br />
+					<Link className="circle-about-link" to="/">
+						=>
 					</Link>
+					{/* <Link className="email-link" to="/work">
+						Work
+					</Link> */}
 				</p>
 			</div>
 		</div>

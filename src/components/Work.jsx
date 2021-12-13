@@ -1,19 +1,45 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Flowers from "../media/flowers.jpg";
+import projectData from "./projectdata";
+import Project from "./Project";
 
-const Work = () => {
-	// function doSomething() {
-	// 	console.log("hej");
-	// }
+function createProject(props) {
 	return (
-		<div className="about-page">
-			{/* <img className="landing-picture" src={Eye} alt="My eye" /> */}
-			<img className="landing-picture" src={Flowers} alt="Flowers" />
-			<div className="landing-square-work">
-				<h2 className="cv-title">Work</h2>
+		<Project
+			key={props.id}
+			title={props.title}
+			img={props.img}
+			year={props.year}
+			info={props.info}
+		/>
+	);
+}
+
+const Work = (props) => {
+	return (
+		<>
+			<div className="about-page">
+				<img className="landing-picture" src={Flowers} alt="Flowers" />
+				<div className="landing-square-work"></div>
+				{/* <div className="landing-square-work-inside"> */}
+
 				<div className="cv-container">
-					<p className="cv-text">
+					{/* <h2 className="cv-title">Projekt</h2> */}
+					{projectData.map(createProject)}
+				</div>
+			</div>
+			<Link className="circle-about-link" to="/about">
+				HELLO
+			</Link>
+		</>
+	);
+};
+
+export default Work;
+
+{
+	/* <p className="cv-text">
 						Serotoni - 2021 <br /> Ljudläggare och ljuddesign
 						<br />
 						<br />
@@ -41,11 +67,5 @@ const Work = () => {
 						<br />
 						Serotoni - 2021 <br /> Ljudläggare och ljuddesign
 						<br />
-					</p>
-				</div>
-			</div>
-		</div>
-	);
-};
-
-export default Work;
+					</p> */
+}

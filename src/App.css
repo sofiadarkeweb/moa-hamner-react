@@ -162,13 +162,14 @@ footer {
 }
 
 .title {
-	color: white;
+	color: rgb(205, 190, 190);
 	z-index: 1000;
 	mix-blend-mode: difference;
 	mix-blend-mode: overlay;
 	display: flex;
-	font-size: 8rem;
-	line-height: 7rem;
+	font-size: 6rem;
+	line-height: 5.5rem;
+	letter-spacing: -0.2rem;
 	text-align: center;
 	font-weight: 700;
 	cursor: pointer;
@@ -178,19 +179,20 @@ footer {
 }
 
 .title:hover {
-	color: black;
+	color: white;
 	animation: 1s ease-out 0s 1 fadeIn;
 }
 
 .landing-sub-title {
-	color: black;
-	font-family: sans-serif;
+	color: rgb(62, 18, 10);
+	font-family: "poppins", sans-serif;
+	/* font-weight: 300; */
 	text-transform: uppercase;
 	position: absolute;
-	/* mix-blend-mode: normal; */
+	mix-blend-mode: overlay;
 	padding-top: 2rem;
 	z-index: 10000;
-	font-size: 1.1rem;
+	font-size: 0.9rem;
 	/* cursor: pointer; */
 }
 

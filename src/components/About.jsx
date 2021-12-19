@@ -13,7 +13,7 @@ const About = () => {
 			<div className="landing-square-about">
 				<p className="about-text">
 					<br />
-					+467664 034i304
+					+4670 869 15 92
 					<br />
 					<a className="email-link" href="mailto:moahamner@hotmail.com">
 						moahamner@hotmail.com
@@ -22,16 +22,14 @@ const About = () => {
 					<br />
 					Moa Hamner
 					<br />
-					Addressrad 1 <br />
-					Addressrad 2
+					Thunbergsgatan 7 <br />
+					121 37 Stockholm
 					<br />
 					{/* <a className="email-link" href="mailto:moahamner@hotmail.com">
 						Kontakta mig
 					</a> */}
 					<br />
-					<Link className="circle-about-link" to="/">
-						=>
-					</Link>
+					<Link className="circle-about-link" to="/"></Link>
 					{/* <Link className="email-link" to="/work">
 						Work
 					</Link> */}

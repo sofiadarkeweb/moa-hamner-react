@@ -29,9 +29,7 @@ const Work = (props) => {
 					{projectData.map(createProject)}
 				</div>
 			</div>
-			<Link className="circle-about-link" to="/about">
-				HELLO
-			</Link>
+			<Link className="circle-about-link" to="/about"></Link>
 		</>
 	);
 };

@@ -9,7 +9,7 @@ const LandingPage = () => {
 	// }
 	return (
 		<div className="landing-page">
-			<h2 className="landing-sub-title">Ljuddesigner för film och radio</h2>
+			<h2 className="landing-sub-title">Ljuddesigner film och radio</h2>
 			<header className="landing-header">
 				<Link className="title" to="/work">
 					Moa <br />

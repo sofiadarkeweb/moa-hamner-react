@@ -409,10 +409,7 @@ a:hover {
 	}
 
 	footer {
-		color: #bbb;
-		margin: 0;
-		font-size: 0.5em;
-		bottom: 1rem;
+		display: none;
 	}
 
 	.movie-img {

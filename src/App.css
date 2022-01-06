@@ -61,9 +61,6 @@ footer {
 	animation: pulse 5s infinite ease-out;
 }
 
-.circle-about-link > a {
-}
-
 @keyframes pulse {
 	0% {
 		transform: scale(0.9); /* scaling to 0 */
@@ -105,15 +102,7 @@ footer {
 	border: 15px pink solid;
 	text-align: left;
 	mix-blend-mode: difference;
-	padding-bottom: 2rem;
-	margin-bottom: 2rem;
-	/* height: 70%; */
 }
-
-/* .landing-square-work-inside {
-	width: 80vw;
-	top: 4rem;
-} */
 
 .cv-title {
 	/* padding: 2rem; */
@@ -333,12 +322,10 @@ a:hover {
 	}
 
 	.landing-square,
-	.landing-square-about {
+	.landing-square-about,
+	.landing-square-work {
 		height: 85vh;
 		width: 85vw;
-	}
-
-	.landing-square-work {
 	}
 
 	.movie-img {
@@ -356,7 +343,7 @@ a:hover {
 	}
 	.cv-container {
 		width: 80vw;
-		height: 80%;
+		height: 75%;
 	}
 }
 @media screen and (max-width: 619px) {
@@ -387,7 +374,7 @@ a:hover {
 	}
 
 	.cv-text {
-		font-size: 0.8rem;
+		font-size: 0.75rem;
 		width: 100%;
 		margin: 0;
 		padding-left: 2em;
@@ -395,17 +382,13 @@ a:hover {
 
 	.cv-container {
 		/* margin-top: 4rem; */
-		height: 85%;
+		height: 82%;
 	}
 
 	.landing-square,
-	.landing-square-about {
-		height: 90vh;
-	}
-
+	.landing-square-about,
 	.landing-square-work {
-		height: 85%;
-		top: 2rem;
+		height: 90vh;
 	}
 
 	footer {
@@ -414,6 +397,13 @@ a:hover {
 
 	.movie-img {
 		width: 200px;
+	}
+
+	.circle-about-link {
+		width: 50px;
+		height: 50px;
+		top: 4%;
+		right: 4%;
 	}
 }
 @media screen and (max-width: 450px) {
@@ -426,11 +416,6 @@ a:hover {
 	.title {
 		font-size: 3rem;
 		line-height: 3rem;
-	}
-
-	.landing-square-work {
-		height: 80%;
-		top: 2rem;
 	}
 
 	.cv-text {

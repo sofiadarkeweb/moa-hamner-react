@@ -373,6 +373,7 @@ a:hover {
 	.title {
 		font-size: 5rem;
 		line-height: 5rem;
+		z-index: 10000;
 	}
 	.landing-sub-title {
 		font-size: 1rem;

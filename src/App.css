@@ -202,6 +202,7 @@ footer {
 	height: 100%;
 	position: fixed;
 	z-index: -1;
+	margin-top: 0;
 	animation: 1s ease-out 0s 1 fadeIn;
 }
 
@@ -304,7 +305,7 @@ a:hover {
 	z-index: 100;
 	/* border: 1px red solid; */
 	margin: 10rem;
-	margin-top: -10rem;
+	margin-top: -5rem;
 	animation: 1s ease-out 0s 1 fadeIn;
 	/* padding: 0.5em; */
 }

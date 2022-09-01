@@ -42,6 +42,15 @@ footer {
 	background-color: blue; */
 }
 
+.work-page {
+	position: relative;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
 .circle-about-link {
 	width: 100px;
 	height: 100px;
@@ -123,7 +132,7 @@ footer {
 	font-family: "poppins", sans-serif;
 	/* padding: 2rem; */
 	text-align: left;
-	width: 48%;
+	width: 30%;
 	/* border: 1px red solid; */
 	/* margin-bottom: 2rem; */
 	position: relative;
@@ -244,6 +253,7 @@ footer {
 .project-sub {
 	font-weight: 300;
 	font-style: italic;
+	font-size: 00.6rem;
 }
 
 .page-title {
@@ -301,7 +311,7 @@ a:hover {
 
 @media screen and (max-width: 1200px) {
 	.cv-text {
-		width: 40%;
+		width: 30%;
 		padding: 0.5em;
 		font-size: 0.9rem;
 		/* background-color: rgb(244, 215, 220); */
@@ -381,14 +391,30 @@ a:hover {
 	}
 
 	.cv-container {
-		/* margin-top: 4rem; */
-		height: 82%;
+		height: auto;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 
 	.landing-square,
-	.landing-square-about,
-	.landing-square-work {
+	.landing-square-about {
 		height: 90vh;
+	}
+
+	.work-page {
+		height: auto;
+	}
+
+	/* .work-page > .landing-picture {
+		display: none;
+	} */
+
+	.landing-square-work {
+		display: none;
 	}
 
 	footer {
@@ -425,7 +451,5 @@ a:hover {
 		padding-left: 2em;
 	}
 	.cv-container {
-		/* margin-top: 4rem; */
-		height: 80%;
 	}
 }

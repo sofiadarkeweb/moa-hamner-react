@@ -19,7 +19,7 @@ function createProject(props) {
 const Work = (props) => {
 	return (
 		<>
-			<div className="about-page">
+			<div className="work-page">
 				<img className="landing-picture" src={Flowers} alt="Flowers" />
 				<div className="landing-square-work"></div>
 				{/* <div className="landing-square-work-inside"> */}
@@ -35,35 +35,3 @@ const Work = (props) => {
 };
 
 export default Work;
-
-{
-	/* <p className="cv-text">
-						Serotoni - 2021 <br /> Ljudläggare och ljuddesign
-						<br />
-						<br />
-						Serotoni - 2021 <br /> Ljudläggare och ljuddesign
-						<br />
-						<br />
-						Serotoni - 2021 <br /> Ljudläggare och ljuddesign
-						<br />
-						<br />
-						Serotoni - 2021 <br /> Ljudläggare och ljuddesign
-						<br />
-						<Link className="email-link" to="/">
-							Moa
-						</Link>
-					</p>
-					<p className="cv-text">
-						Serotoni - 2021 <br /> Ljudläggare och ljuddesign
-						<br />
-						<br />
-						Serotoni - 2021 <br /> Ljudläggare och ljuddesign
-						<br />
-						<br />
-						Serotoni - 2021 <br /> Ljudläggare och ljuddesign
-						<br />
-						<br />
-						Serotoni - 2021 <br /> Ljudläggare och ljuddesign
-						<br />
-					</p> */
-}
